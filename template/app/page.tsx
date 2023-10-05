@@ -46,7 +46,7 @@ export default function Home() {
 
         <h2 className={styles.pageSubtitle}>
           {/* TODO: Replace this text */}
-          The simplest home page template for new projects
+          Create simple home pages fast
         </h2>
       </section>
 

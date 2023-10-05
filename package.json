@@ -1,16 +1,22 @@
 {
   "name": "simple-home-page",
   "version": "1.1.1",
-  "description": "Generate simple home pages fast",
+  "description": "Create simple home pages fast",
   "main": "index.js",
   "keywords": [
-    "home",
+    "web page",
+    "web page generator",
+    "web page creator",
     "home page",
     "home page generator",
+    "home page creator",
     "website generator",
     "website",
+    "website creator",
     "simple website",
-    "simple home page"
+    "simple home page",
+    "lead generator",
+    "lead generation"
   ],
   "author": "Professor Ragna <professor.ragna@gmail.com>",
   "license": "ISC",
