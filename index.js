@@ -18,10 +18,11 @@ program
     }
 
     try {
-      // Create a copy of the existing template directory
-      await fs.copy("template", appName);
+      // Create a copy of the existing template directory.
+      await fs.copy(`${__dirname}/template`, appName); // __dirname gets the absolute path of the directory from where this script is being executed from
     } catch (error) {
       console.error(`Error: ${error.message}`);
+      return;
     }
 
     // Update package.json name property to user-specified appName
@@ -37,6 +38,7 @@ program
       await fs.writeJson(packageJsonPath, packageJson, { spaces: 2 });
     } catch (error) {
       console.error(`Error: ${error.message}`);
+      return;
     }
 
     console.log(`Successfully generated ${appName}`);
