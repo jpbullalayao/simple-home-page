@@ -1,17 +1,22 @@
 {
   "name": "simple-home-page",
   "version": "1.0.0",
-  "description": "",
+  "description": "Generate simple home pages fast",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "home",
+    "home page",
+    "home page generator",
+    "website generator",
+    "website",
+    "simple website",
+    "simple home page"
+  ],
+  "author": "Professor Ragna <professor.ragna@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "commander": "11.0.0",
-    "fs-extra": "^11.1.1"
+    "fs-extra": "11.1.1"
   },
   "bin": {
     "simple-home-page": "./index.js"
