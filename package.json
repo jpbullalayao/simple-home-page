@@ -1,6 +1,6 @@
 {
   "name": "simple-home-page",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Generate simple home pages fast",
   "main": "index.js",
   "keywords": [
