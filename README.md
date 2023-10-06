@@ -2,7 +2,8 @@
 
 Create simple home pages fast 🚀
 
-<img width="1680" alt="Screen Shot 2023-10-04 at 7 33 17 PM" src="https://github.com/jpbullalayao/simple-home-page/assets/3538024/79c415ae-18a7-4375-b472-e3de618be7ea">
+<img width="1680" alt="Screen Shot 2023-10-04 at 7 33 17 PM" src="https://github.com/jpbullalayao/simple-home-page/assets/3538024/0e2c0b51-224e-4e54-b945-2ff2127206d9">
+
 
 ## Installation
 
