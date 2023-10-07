@@ -33,6 +33,22 @@ Following this, you now have an application created on your local machine that c
 
 If you like, extend the existing HTML and CSS if you want a more feature-rich home page. This home page also serves as a starting point if you want to build your website with Next.js!
 
+## How does lead generation work?
+
+The generated home page contains an **optional** feature of collecting e-mail leads (which would be e-mailed to your specified e-mail address), if you would like to collect leads for your product when your simple home page is deployed to production.
+
+`.env.local` is an auto-generated file in your application that contains 3 environment variables that are used for lead generation:
+
+```
+SENDGRID_API_KEY
+EMAIL_TO_ADDRESS
+EMAIL_FROM_ADDRESS
+```
+
+You can retrieve your `SENDBIRD_API_KEY` when creating a [SendGrid](https://sendgrid.com/) account. `EMAIL_TO_ADDRESS` and `EMAIL_FROM_ADDRESS` can be the same e-mail address - these are necessary to generate and send an e-mail to your `EMAIL_TO_ADDRESS` when someone adds their email on your ho,e page.
+
+**If you don't want to use the built-in lead generation feature**, simple delete `<LeadGen />` from `page.tsx` and ignore this section.
+
 ## Deployment
 
 Unfortunately, there is no CLI command to easily deploy your application (yet) - you have to do it manually.
@@ -40,9 +56,7 @@ Unfortunately, there is no CLI command to easily deploy your application (yet) -
 In order to deploy your own simple home page, you need the following:
 
 1. A [Vercel](https://vercel.com/) account (for project deployment & management)
-2. (OPTIONAL) A [SendGrid](https://sendgrid.com/) account, **if** you require e-mail notifications when generating leads
-
-The templated home page contains an e-mail field that you can use to gather interest for your upcoming project, which is why SendGrid is an optional requirement. Feel free to use it, or feel free to delete it if you prefer not to have it!
+2. (OPTIONAL) A [SendGrid](https://sendgrid.com/) account
 
 Once you have the above accounts setup and retrieved your SendGrid API Key, you can deploy your application on Vercel, while setting your `SENDGRID_API_KEY`, `EMAIL_TO_ADDRESS`, and `EMAIL_FROM_ADDRESS` environment variables in the process.
 

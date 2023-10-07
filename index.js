@@ -41,6 +41,12 @@ program
       return;
     }
 
+    // Create .env.local
+    const envFileContent =
+      "SENDGRID_API_KEY = TODO\nEMAIL_TO_ADDRESS = TODO\nEMAIL_FROM_ADDRESS = TODO";
+    const envFilePath = path.join(`./${appName}/`, ".env.local");
+    fs.writeFileSync(envFilePath, envFileContent, "utf-8");
+
     console.log(`Successfully generated ${appName}`);
   });
 
