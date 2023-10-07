@@ -4,7 +4,6 @@ Create simple home pages fast 🚀
 
 <img width="1680" alt="Screen Shot 2023-10-04 at 7 33 17 PM" src="https://github.com/jpbullalayao/simple-home-page/assets/3538024/0e2c0b51-224e-4e54-b945-2ff2127206d9">
 
-
 ## Installation
 
 `simple-home-page` is a CLI tool that you can use to create your simple home page fast with little effort, so that you can focus on what matters: building a product that people want.
@@ -30,9 +29,7 @@ adjusting your home page.
 $ cd <appName>
 ```
 
-## Okay, now what?
-
-You now have an application created on your local machine that contains a templated home page with placeholder values. Open the application in your favorite IDE and search the code for `TODO` references, so that you can begin replacing certain placeholders with values that make sense for your project.
+Following this, you now have an application created on your local machine that contains a templated home page with placeholder values. Open the application in your favorite IDE and search the code for `TODO` references, so that you can begin replacing certain placeholders with values that make sense for your project.
 
 If you like, extend the existing HTML and CSS if you want a more feature-rich home page. This home page also serves as a starting point if you want to build your website with Next.js!
 
