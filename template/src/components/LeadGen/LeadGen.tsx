@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import styles from "./LeadGen.module.css";
 
 export const LeadGen = () => {
-  const [joined, setJoined] = useState(false);
-  const [email, setEmail] = useState(null);
+  const [joined, setJoined] = useState<boolean>(false);
+  const [email, setEmail] = useState<string>("");
 
-  const handleChange = (event) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(event.currentTarget.value);
   };
 

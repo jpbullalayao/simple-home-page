@@ -47,6 +47,11 @@ program
     const envFilePath = path.join(`./${appName}/`, ".env.local");
     fs.writeFileSync(envFilePath, envFileContent, "utf-8");
 
+    // Create README.md
+    const readmeContent = `# ${appName}`;
+    const readmeFilePath = path.join(`./${appName}/`, "README.md");
+    fs.writeFileSync(readmeFilePath, readmeContent, "utf-8");
+
     console.log(`Successfully generated ${appName}`);
   });
 

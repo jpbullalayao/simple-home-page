@@ -22,11 +22,11 @@ To create your home page, run the following (replaing `<appName>` with your desi
 $ simple-home-page init <appName>
 ```
 
-This will create an application (templated with the [Next.js](https://nextjs.org/) framework) on your local machine, in which you can `cd` into to begin
-adjusting your home page.
+This will create an application (templated with the [Next.js](https://nextjs.org/) framework) on your local machine, in which you can `cd` into to install the dependencies and then begin adjusting your home page.
 
 ```
 $ cd <appName>
+$ npm i
 ```
 
 Following this, you now have an application created on your local machine that contains a templated home page with placeholder values. Open the application in your favorite IDE and search the code for `TODO` references, so that you can begin replacing certain placeholders with values that make sense for your project.
@@ -49,21 +49,6 @@ You can retrieve your `SENDBIRD_API_KEY` when creating a [SendGrid](https://send
 
 **If you don't want to use the built-in lead generation feature**, simple delete `<LeadGen />` from `page.tsx` and ignore this section.
 
-## Deployment
-
-Unfortunately, there is no CLI command to easily deploy your application (yet) - you have to do it manually.
-
-In order to deploy your own simple home page, you need the following:
-
-1. A [Vercel](https://vercel.com/) account (for project deployment & management)
-2. (OPTIONAL) A [SendGrid](https://sendgrid.com/) account
-
-Once you have the above accounts setup and retrieved your SendGrid API Key, you can deploy your application on Vercel, while setting your `SENDGRID_API_KEY`, `EMAIL_TO_ADDRESS`, and `EMAIL_FROM_ADDRESS` environment variables in the process.
-
-If you need a video demo of how to deploy your application to Vercel, see below:
-
-And that's all that you need in order to deploy your simple home page! Now go focus on building your product 🚀
-
 ## How do I run my application?
 
 When testing your application changes before you deploy, you can use the following commands to run the project:
@@ -82,6 +67,21 @@ $ npm run start
 ```
 
 The application will be available at http://localhost:3000
+
+## Deployment
+
+Unfortunately, there is no CLI command to easily deploy your application (yet) - you have to do it manually.
+
+In order to deploy your own simple home page, you need the following:
+
+1. A [Vercel](https://vercel.com/) account (for project deployment & management)
+2. (OPTIONAL) A [SendGrid](https://sendgrid.com/) account
+
+Once you have the above accounts setup and retrieved your SendGrid API Key, you can deploy your application on Vercel, while setting your `SENDGRID_API_KEY`, `EMAIL_TO_ADDRESS`, and `EMAIL_FROM_ADDRESS` environment variables in the process.
+
+If you need a video demo of how to deploy your application to Vercel, see below:
+
+And that's all that you need in order to deploy your simple home page! Now go focus on building your product 🚀
 
 ## Contact
 
