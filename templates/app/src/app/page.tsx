@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { LeadGen } from "./@/components/LeadGen";
+import { LeadGen } from "@/components/LeadGen";
 
 import styles from "./page.module.css";
 
