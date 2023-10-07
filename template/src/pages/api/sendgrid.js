@@ -6,7 +6,7 @@ async function sendEmail(req, res) {
   try {
     await sendgrid.send({
       to: process.env.EMAIL_TO_ADDRESS, // TODO: Set this environment variable in Vercel
-      from: EMAIL_FROM_ADDRESS, // TODO: Set this environment variable in Vercel
+      from: process.env.EMAIL_FROM_ADDRESS, // TODO: Set this environment variable in Vercel
       subject: `${req.body.subject}`,
       html: `<div>You have received a new subscriber! ${req.body.email}</div>`,
     });

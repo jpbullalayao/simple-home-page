@@ -4,7 +4,6 @@ Create simple home pages fast 🚀
 
 <img width="1680" alt="Screen Shot 2023-10-04 at 7 33 17 PM" src="https://github.com/jpbullalayao/simple-home-page/assets/3538024/0e2c0b51-224e-4e54-b945-2ff2127206d9">
 
-
 ## Installation
 
 `simple-home-page` is a CLI tool that you can use to create your simple home page fast with little effort, so that you can focus on what matters: building a product that people want.
@@ -23,35 +22,32 @@ To create your home page, run the following (replaing `<appName>` with your desi
 $ simple-home-page init <appName>
 ```
 
-This will create an application (templated with the [Next.js](https://nextjs.org/) framework) on your local machine, in which you can `cd` into to begin
-adjusting your home page.
+This will create an application (templated with the [Next.js](https://nextjs.org/) framework) on your local machine, in which you can `cd` into to install the dependencies and then begin adjusting your home page.
 
 ```
 $ cd <appName>
+$ npm i
 ```
 
-## Okay, now what?
-
-You now have an application created on your local machine that contains a templated home page with placeholder values. Open the application in your favorite IDE and search the code for `TODO` references, so that you can begin replacing certain placeholders with values that make sense for your project.
+Following this, you now have an application created on your local machine that contains a templated home page with placeholder values. Open the application in your favorite IDE and search the code for `TODO` references, so that you can begin replacing certain placeholders with values that make sense for your project.
 
 If you like, extend the existing HTML and CSS if you want a more feature-rich home page. This home page also serves as a starting point if you want to build your website with Next.js!
 
-## Deployment
+## How does lead generation work?
 
-Unfortunately, there is no CLI command to easily deploy your application (yet) - you have to do it manually.
+The generated home page contains an **optional** feature of collecting e-mail leads (which would be e-mailed to your specified e-mail address), if you would like to collect leads for your product when your simple home page is deployed to production.
 
-In order to deploy your own simple home page, you need the following:
+`.env.local` is an auto-generated file in your application that contains 3 environment variables that are used for lead generation:
 
-1. A [Vercel](https://vercel.com/) account (for project deployment & management)
-2. (OPTIONAL) A [SendGrid](https://sendgrid.com/) account, **if** you require e-mail notifications when generating leads
+```
+SENDGRID_API_KEY
+EMAIL_TO_ADDRESS
+EMAIL_FROM_ADDRESS
+```
 
-The templated home page contains an e-mail field that you can use to gather interest for your upcoming project, which is why SendGrid is an optional requirement. Feel free to use it, or feel free to delete it if you prefer not to have it!
+You can retrieve your `SENDBIRD_API_KEY` when creating a [SendGrid](https://sendgrid.com/) account. `EMAIL_TO_ADDRESS` and `EMAIL_FROM_ADDRESS` can be the same e-mail address - these are necessary to generate and send an e-mail to your `EMAIL_TO_ADDRESS` when someone adds their email on your ho,e page.
 
-Once you have the above accounts setup and retrieved your SendGrid API Key, you can deploy your application on Vercel, while setting your `SENDGRID_API_KEY`, `EMAIL_TO_ADDRESS`, and `EMAIL_FROM_ADDRESS` environment variables in the process.
-
-If you need a video demo of how to deploy your application to Vercel, see below:
-
-And that's all that you need in order to deploy your simple home page! Now go focus on building your product 🚀
+**If you don't want to use the built-in lead generation feature**, simple delete `<LeadGen />` from `page.tsx` and ignore this section.
 
 ## How do I run my application?
 
@@ -71,6 +67,21 @@ $ npm run start
 ```
 
 The application will be available at http://localhost:3000
+
+## Deployment
+
+Unfortunately, there is no CLI command to easily deploy your application (yet) - you have to do it manually.
+
+In order to deploy your own simple home page, you need the following:
+
+1. A [Vercel](https://vercel.com/) account (for project deployment & management)
+2. (OPTIONAL) A [SendGrid](https://sendgrid.com/) account
+
+Once you have the above accounts setup and retrieved your SendGrid API Key, you can deploy your application on Vercel, while setting your `SENDGRID_API_KEY`, `EMAIL_TO_ADDRESS`, and `EMAIL_FROM_ADDRESS` environment variables in the process.
+
+If you need a video demo of how to deploy your application to Vercel, see below:
+
+And that's all that you need in order to deploy your simple home page! Now go focus on building your product 🚀
 
 ## Contact
 
