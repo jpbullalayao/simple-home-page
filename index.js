@@ -19,7 +19,7 @@ program
 
     try {
       // Create a copy of the existing template directory.
-      await fs.copy(`${__dirname}/template`, appName); // __dirname gets the absolute path of the directory from where this script is being executed from
+      await fs.copy(`${__dirname}/templates/app`, appName); // __dirname gets the absolute path of the directory from where this script is being executed from
     } catch (error) {
       console.error(`Error: ${error.message}`);
       return;
@@ -41,16 +41,32 @@ program
       return;
     }
 
-    // Create .env.local
-    const envFileContent =
-      "SENDGRID_API_KEY = TODO\nEMAIL_TO_ADDRESS = TODO\nEMAIL_FROM_ADDRESS = TODO";
-    const envFilePath = path.join(`./${appName}/`, ".env.local");
-    fs.writeFileSync(envFilePath, envFileContent, "utf-8");
-
     // Create README.md
     const readmeContent = `# ${appName}`;
     const readmeFilePath = path.join(`./${appName}/`, "README.md");
     fs.writeFileSync(readmeFilePath, readmeContent, "utf-8");
+
+    try {
+      // Copy env.local template to generated app
+      await fs.copy(
+        `${__dirname}/templates/env.local.template`,
+        `${appName}/.env.local`
+      );
+    } catch (error) {
+      console.error(`Error: ${error.message}`);
+      return;
+    }
+
+    try {
+      // Copy gitignore template to generated app
+      await fs.copy(
+        `${__dirname}/templates/gitignore.template`,
+        `${appName}/.gitignore`
+      );
+    } catch (error) {
+      console.error(`Error: ${error.message}`);
+      return;
+    }
 
     console.log(`Successfully generated ${appName}`);
   });
