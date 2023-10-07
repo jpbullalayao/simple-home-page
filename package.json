@@ -1,8 +1,16 @@
 {
   "name": "simple-home-page",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Create simple home pages fast",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jpbullalayao/simple-home-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jpbullalayao/simple-home-page/issues"
+  },
+  "homepage": "https://github.com/jpbullalayao/simple-home-page",
   "keywords": [
     "web page",
     "web page generator",
