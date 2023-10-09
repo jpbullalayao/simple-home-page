@@ -82,10 +82,14 @@ Once you have handled the above and retrieved your SendGrid API Key, you can dep
 
 For a video demo of how to deploy your application to Vercel, see below:
 
+https://github.com/jpbullalayao/simple-home-page/assets/3538024/7fc07a2e-c872-4b0c-8873-a0e4e8fc8110
+
 And that's all that you need in order to deploy your simple home page! Now go focus on building your product 🚀
 
-## Contact
+## Contact & Support
 
 If you'd like to contact me for any questions, issues, or if you'd just like to chat, you can tweet me [@professorragna](https://twitter.com/professorragna) or e-mail me at [professor.ragna@gmail.com](mailto:professor.ragna@gmail.com)
 
 Please tweet me or e-mail me if you actually download and use this tool, I'd love to know who has used it! :)
+
+Also, if this package brought you any value, or if you enjoy the projects I'm working on, please feel free to [buy me a coffee](https://www.buymeacoffee.com/professorragna) 😄. Thank you!
